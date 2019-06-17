@@ -1,0 +1,94 @@
+import { CodeSurferLayout } from "code-surfer";
+export { githubFull as theme } from "code-surfer/themes";
+
+# Hello 👋
+
+You are using [MDX Deck](https://github.com/jxnblk/mdx-deck) and [Code Surfer](https://github.com/pomber/code-surfer)
+
+---
+
+<CodeSurferLayout>
+
+```js title="This is a title"
+function hello(name) {
+  console.log("hello " + name);
+}
+
+hello("world");
+```
+
+```js 1:3 subtitle="This is a subtitle"
+function hello(name) {
+  console.log("hello " + name);
+}
+
+hello("world");
+```
+
+```js subtitle="New code is highlighted by default"
+function helloFactory() {
+  return name => {
+    console.log("hello " + name);
+  };
+}
+
+function hello(name) {
+  console.log("hello " + name);
+}
+
+hello("world");
+```
+
+```js subtitle="Adding more code so I can show you how the zoom works"
+function helloFactoryBuilder() {
+  return () => () => name => {
+    console.log("hello " + name);
+  };
+}
+
+function helloBuilder() {
+  return name => {
+    console.log("hello " + name);
+  };
+}
+
+function helloFactory() {
+  return name => {
+    console.log("hello " + name);
+  };
+}
+
+function hello(name) {
+  console.log("hello " + name);
+}
+
+hello("world");
+```
+
+```js 1:23
+function helloFactoryBuilder() {
+  return () => () => name => {
+    console.log("hello " + name);
+  };
+}
+
+function helloBuilder() {
+  return name => {
+    console.log("hello " + name);
+  };
+}
+
+function helloFactory() {
+  return name => {
+    console.log("hello " + name);
+  };
+}
+
+function hello(name) {
+  console.log("hello " + name);
+}
+
+hello("world");
+```
+
+</CodeSurferLayout>

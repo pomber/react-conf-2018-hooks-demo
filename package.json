@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "test": "echo \"there are no tests\""
+  },
+  "devDependencies": {
+    "code-surfer": "2.0.0-alpha.6",
+    "mdx-deck": "2.3.2",
+    "raw-loader": "3.0.0"
+  },
+  "name": "react-conf-2018-hooks-demo"
+}
