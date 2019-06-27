@@ -9,7 +9,6 @@ export default function GreetingLoader({
   const Greeting = load("./greeting." + version + ".js")
     .default;
 
-  console.log(theme);
   return (
     <div
       style={{
