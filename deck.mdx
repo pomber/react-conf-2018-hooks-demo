@@ -289,3 +289,88 @@ But let's take a step back
 </Step>
 
 </CodeSurferColumns>
+
+---
+
+<CodeSurferColumns
+  sizes={[1, 2]}
+  themes={[classTheme, hooksTheme]}
+>
+
+<Step subtitle="How could we do the same with hooks?">
+
+<GreetingLoader version="hooks.2.1" theme={hooksTheme} />
+
+```jsx file=./src/greeting.hooks.2.1.js
+```
+
+</Step>
+
+<Step subtitle="we import useContext from React">
+
+<GreetingLoader version="hooks.3.1" theme={hooksTheme} />
+
+```jsx 1[27:37,40:52],3 file=./src/greeting.hooks.3.1.js
+```
+
+</Step>
+
+<Step subtitle="we can get the theme (and subscribe to updates) by just using the hook">
+
+<GreetingLoader version="hooks.3.2" theme={hooksTheme} />
+
+```jsx 8,19[14:30] file=./src/greeting.hooks.3.2.js
+```
+
+</Step>
+
+<Step subtitle="">
+
+<GreetingLoader version="hooks.3.3" theme={hooksTheme} />
+
+```jsx file=./src/greeting.hooks.3.3.js
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns themes={[classTheme, hooksTheme]}>
+
+<Step subtitle="with the context hook we get rid of the render prop wrapper">
+
+```jsx 30,31,45,46,48,49,51,52 file=./src/greeting.class.3.3.js title="Before Hooks"
+```
+
+```jsx 8,9 file=./src/greeting.hooks.3.3.js title="After Hooks"
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns sizes={[1, 2]}>
+
+<Step subtitle="Let's now update the document title using lifecycle methods">
+
+<GreetingLoader version="class.3.3" />
+
+```jsx file=./src/greeting.class.3.3.js
+```
+
+</Step>
+
+<Step subtitle="we do it by implementing componentDidMount and componentDidUpdate">
+
+<GreetingLoader version="class.4.1" />
+
+```jsx file=./src/greeting.class.4.1.js
+```
+
+</Step>
+
+</CodeSurferColumns>
