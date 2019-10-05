@@ -27,6 +27,10 @@ export default function GreetingLoader({
 
   const t = theme || themeUi;
 
+  if (typeof window == `undefined`) {
+    return null;
+  }
+
   return (
     <div
       style={{
