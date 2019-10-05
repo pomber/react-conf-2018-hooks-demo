@@ -374,3 +374,116 @@ But let's take a step back
 </Step>
 
 </CodeSurferColumns>
+
+---
+
+<CodeSurferColumns
+  sizes={[1, 2]}
+  themes={[classTheme, hooksTheme]}
+>
+
+<Step subtitle="How do we do this with hooks?">
+
+<GreetingLoader version="hooks.3.3" theme={hooksTheme} />
+
+```jsx file=./src/greeting.hooks.3.3.js
+```
+
+</Step>
+
+<Step subtitle="we have the useEffect hook">
+
+<GreetingLoader version="hooks.4.1" theme={hooksTheme} />
+
+```jsx 1,4,5 file=./src/greeting.hooks.4.1.js
+```
+
+</Step>
+
+<Step subtitle="we pass a function that will run after every update and after the initial render">
+
+<GreetingLoader version="hooks.4.2" theme={hooksTheme} />
+
+```jsx file=./src/greeting.hooks.4.2.js
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns themes={[classTheme, hooksTheme]}>
+
+<Step>
+
+```jsx 20:28 file=./src/greeting.class.4.1.js title="Before Hooks" subtitle="We have different lifecycle methods for mount and update"
+```
+
+```jsx 15:17 file=./src/greeting.hooks.4.2.js title="After Hooks"
+```
+
+</Step>
+
+<Step>
+
+```jsx 20:28 file=./src/greeting.class.4.1.js title="Before Hooks" subtitle="we use this.state to access state"
+```
+
+```jsx 15:17 file=./src/greeting.hooks.4.2.js title="After Hooks" subtitle="the effect is inside the function component so we can use the variables from the function scope"
+```
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+<CodeSurferColumns sizes={[1, 2]}>
+
+<Step subtitle="Now we want to subscribe to the windows resize event">
+
+<GreetingLoader version="class.4.1" />
+
+```jsx file=./src/greeting.class.4.1.js
+```
+
+</Step>
+
+<Step subtitle="we add the window width to the state">
+
+<GreetingLoader version="class.5.1" />
+
+```jsx file=./src/greeting.class.5.1.js
+```
+
+</Step>
+
+<Step subtitle="add a row to render it">
+
+<GreetingLoader version="class.5.2" />
+
+```jsx file=./src/greeting.class.5.2.js
+```
+
+</Step>
+
+<Step subtitle="add a listener when the component mounts">
+
+<GreetingLoader version="class.5.3" />
+
+```jsx file=./src/greeting.class.5.3.js
+```
+
+</Step>
+
+<Step subtitle="and remove the listener before the component unmounts">
+
+<GreetingLoader version="class.5.4" />
+
+```jsx file=./src/greeting.class.5.4.js
+```
+
+</Step>
+
+</CodeSurferColumns>
