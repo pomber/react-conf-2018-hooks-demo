@@ -7,7 +7,7 @@
     "test": "echo \"there are no tests\""
   },
   "devDependencies": {
-    "code-surfer": "^3.0.0-beta.0",
+    "code-surfer": "^3.0.0-beta.1",
     "mdx-deck": "3.0.10"
   },
   "name": "react-conf-2018-hooks-demo"

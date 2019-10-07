@@ -1,4 +1,3 @@
-
 import { Image, Notes, Head } from "mdx-deck";
 import { CodeSurferColumns, Step } from "code-surfer";
 import {
@@ -6,18 +5,14 @@ import {
   nightOwl as hooksTheme,
 } from "@code-surfer/themes";
 
-import GreetingLoader, {
-  full,
-} from "./src/greeting-loader";
+import GreetingLoader from "./src/greeting-loader";
 import onemorething from "./onemorething.jpg";
 
-export const theme = full(classTheme);
-
+export const theme = classTheme;
 
 <Head>
   <title>React Hooks Intro</title>
 </Head>
-
 
 This is a copy of [Dan's hooks demo](https://youtu.be/dpw9EHDh2bM?t=1051) from React Conf
 
@@ -135,7 +130,6 @@ But let's take a step back
 <GreetingLoader theme={hooksTheme} />
 
 ```jsx 5:6 file=./src/greeting.hooks.1.2.js
-
 ```
 
 </Step>
@@ -166,7 +160,7 @@ But let's take a step back
 
 <Step>
 
-```jsx file=./src/greeting.class.1.3.js title="Before Hooks" subtitle="A _class component with state"
+```jsx file=./src/greeting.class.1.3.js title="Before Hooks" subtitle="A class component with state"
 ```
 
 ```jsx file=./src/greeting.hooks.1.4.js title="After Hooks" subtitle="A function component with state"
